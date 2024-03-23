@@ -25,6 +25,7 @@ export default async (app) => {
             posts.push({
                 imagepath: result[i].picture,
                 text: result[i].body,
+                date: result[i].date,
             });
         }
         if (posts.length > 0) {
